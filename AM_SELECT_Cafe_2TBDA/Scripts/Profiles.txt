@@ -1,0 +1,103 @@
+-- SYS
+
+-- Procedure para criar usuárioas com GRANTS
+CREATE OR REPLACE PROCEDURE P_USER_INSERT (usuario IN VARCHAR2) IS
+BEGIN
+
+  EXECUTE IMMEDIATE 'CREATE TABLESPACE TBS_' || usuario || ' DATAFILE SIZE 500K AUTOEXTEND ON NEXT 500K MAXSIZE UNLIMITED';
+  EXECUTE IMMEDIATE 'CREATE USER ' || usuario || ' IDENTIFIED BY ' || usuario || ' DEFAULT TABLESPACE TBS_' || usuario || ' TEMPORARY TABLESPACE temp QUOTA UNLIMITED ON TBS_' || usuario;
+  EXECUTE IMMEDIATE 'GRANT CREATE SESSION TO ' || usuario;
+  EXECUTE IMMEDIATE 'GRANT CREATE TABLE, CREATE PROCEDURE, CREATE SEQUENCE, CREATE VIEW, CREATE ANY INDEX TO ' || usuario;
+
+END;
+/
+
+-- Chamando a procedure P_USER_INSERT
+-- Criando o usuário 'selectgroup'
+call P_USER_INSERT('selectgroup');
+
+-- Se conectar com o usuário 'selectgroup' e rodar o script DDL
+-- DDL.sql
+
+-- SYS
+
+-- Procedure para criar role com GRANTS
+CREATE OR REPLACE PROCEDURE P_CREATE_ROLE (nm_role IN VARCHAR2) IS
+BEGIN
+
+  EXECUTE IMMEDIATE 'CREATE ROLE ' || nm_role;
+  EXECUTE IMMEDIATE 'GRANT CREATE TABLE, CREATE PROCEDURE, CREATE SEQUENCE, CREATE VIEW, CREATE ANY INDEX TO ' || nm_role;
+
+END;
+/
+
+-- Chamando a procedure P_CREATE_ROLE
+-- Criando a role 'select_role'
+call P_CREATE_ROLE('select_role');
+
+-- Criar GRANTS de SELECT no schema 'selectgroup' para a role 'select_role' nas tabelas do nosso modelo relacional 
+SELECT 'GRANT SELECT ON ' || '&schema' || '.' || table_name || ' TO ' || '&test' || ';' FROM dba_tables WHERE OWNER = UPPER('&schema');
+
+-- GRANTS de SELECT
+GRANT SELECT ON selectgroup.BAIRRO TO select_role;
+GRANT SELECT ON selectgroup.CARACTERISTICA_CAFE TO select_role;
+GRANT SELECT ON selectgroup.CARGO TO select_role;
+GRANT SELECT ON selectgroup.CATEGORIA TO select_role;
+GRANT SELECT ON selectgroup.CIDADE TO select_role;
+GRANT SELECT ON selectgroup.CLIENTE TO select_role;
+GRANT SELECT ON selectgroup.COMBO TO select_role;
+GRANT SELECT ON selectgroup.COMBO_ITEM TO select_role;
+GRANT SELECT ON selectgroup.COMBO_ITEM_COMBO TO select_role;
+GRANT SELECT ON selectgroup.ENDERECO TO select_role;
+GRANT SELECT ON selectgroup.ESTADO TO select_role;
+GRANT SELECT ON selectgroup.FUNCIONARIO TO select_role;
+GRANT SELECT ON selectgroup.GRUPO_UNIDADE TO select_role;
+GRANT SELECT ON selectgroup.PAGAMENTO TO select_role;
+GRANT SELECT ON selectgroup.PAIS TO select_role;
+GRANT SELECT ON selectgroup.PRODUTO TO select_role;
+GRANT SELECT ON selectgroup.PROMOCAO TO select_role;
+GRANT SELECT ON selectgroup.PROMOCAO_ITEM TO select_role;
+GRANT SELECT ON selectgroup.PROMOCAO_ITEM_PROMOCAO TO select_role;
+GRANT SELECT ON selectgroup.TELEFONE TO select_role;
+GRANT SELECT ON selectgroup.TIPO_UNIDADE TO select_role;
+GRANT SELECT ON selectgroup.UNIDADE TO select_role;
+GRANT SELECT ON selectgroup.VENDA TO select_role;
+GRANT SELECT ON selectgroup.VENDA_ITEM TO select_role;
+
+-- Procedure para criar usuário com GRANT da role 'select_role'
+CREATE OR REPLACE PROCEDURE P_CREATE_USER (usuario IN VARCHAR2) IS
+BEGIN
+
+  EXECUTE IMMEDIATE 'CREATE TABLESPACE TBS_' || usuario || ' DATAFILE SIZE 500K AUTOEXTEND ON NEXT 500K MAXSIZE UNLIMITED';
+  EXECUTE IMMEDIATE 'CREATE USER ' || usuario || ' IDENTIFIED BY ' || usuario || ' DEFAULT TABLESPACE TBS_' || usuario || ' TEMPORARY TABLESPACE temp QUOTA UNLIMITED ON TBS_' || usuario;
+  EXECUTE IMMEDIATE 'GRANT CREATE SESSION TO ' || usuario;
+  EXECUTE IMMEDIATE 'GRANT select_role TO ' || usuario;
+
+END;
+/
+
+-- Chamando a procedure P_CREATE_USER
+-- Criando os usuários dos integrantes do grupo
+call P_CREATE_USER('RM73920');
+call P_CREATE_USER('RM75312');
+call P_CREATE_USER('RM73671');
+call P_CREATE_USER('RM74305');
+call P_CREATE_USER('RM74296');
+
+-- Criando profile 'select_prof'
+create profile select_prof limit
+failed_login_attempts 3
+password_lock_time 1
+password_life_time 30
+password_reuse_time 30
+password_grace_time 5;
+
+-- Criar ALTER do profile dos integrantes do grupo
+SELECT 'ALTER USER ' || username || ' PROFILE ' || '&prof' || ';' FROM dba_users WHERE username LIKE 'RM%';
+
+-- ALTERS de profile dos integrantes do grupo
+ALTER USER RM73920 PROFILE select_prof;
+ALTER USER RM73671 PROFILE select_prof;
+ALTER USER RM74305 PROFILE select_prof;
+ALTER USER RM74296 PROFILE select_prof;
+ALTER USER RM75312 PROFILE select_prof;
