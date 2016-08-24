@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_FAT_VENDA_DIM_CLIENTE" directorySegmentName="seg_0" id="D6804E0F-89DE-10B2-7875-96EC449E6027">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:20:41 UTC</createdTime>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<sourcePk>B4E2BAFA-0041-260A-194F-05142DB407D5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>pertence a</nameOnSource>
+<nameOnTarget>possui</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A14724A-988B-9569-B1DB-C0B9A663E97D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A76AA347-9BBB-EAB5-D8C5-2A4CA6BF16B9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

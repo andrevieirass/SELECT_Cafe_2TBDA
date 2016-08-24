@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80E20590-4C20-B009-9ACC-5A890F374DCE" name="DIM_PRODUTO">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>3252C333-1648-F23B-CCB6-DA41977CAD64</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_produto" id="FA726953-682F-3D5F-0EFA-89D3B14521CB">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão produto.&lt;br/&gt;Surragte Key.</comment>
+<generatorID>4F561F37-D0A0-C789-6EF7-27A0E3BA8A31</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nk_produto" id="98C9AA96-EB04-086B-C262-813E93445F83">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código do produto.&lt;br/&gt;Naatural Key.</comment>
+<generatorID>999A9B94-FE92-A3D9-3235-D0CC418B6F7E</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_produto" id="F59D205F-F646-E13B-0392-C5BBC6B09BFE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Nome do produto.</comment>
+<generatorID>0EFC5906-C8C0-5010-2139-D90274D51CA5</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_produto" id="F8FAB827-77C3-3DAB-35DC-4C0EB091977B">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Descrição do produto.</comment>
+<generatorID>B4CC36F6-45E9-D248-4888-235AF5031E31</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nk_categoria" id="E74A7A5D-3A3E-317C-DB2C-74C0DD88062C">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da categoria.&lt;br/&gt;Natural Key.</comment>
+<generatorID>21103E9F-54C3-5F1A-152A-6581096C6E87</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_categoria" id="1012B532-1C11-3128-A65C-1415D3EB664C">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Nome da categoria.</comment>
+<generatorID>C755971D-7689-B76D-877A-95AA448C2A75</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nk_subcategoria" id="3411C43B-9D46-C339-4AE3-65DE445E23BE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da subcategoria.&lt;br/&gt;Natural Key.</comment>
+<generatorID>58DC7D0C-9F09-61E7-2A98-8546587A7D7C</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_subcategoria" id="ED63FC03-F25D-5678-3CAE-8DD37C39A764">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Nome da subcategoria.</comment>
+<generatorID>066EEAE6-EBA5-B583-A04D-A3D548DBDBA8</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_torra_cafe" id="A91F1AF8-8340-2504-5B7C-BD3A8E5221E0">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Tipo de torra do café.</comment>
+<generatorID>C1A5C9D6-472D-2F38-99E0-C5445EBCF486</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_acidez_cafe" id="F4E4C309-0C6D-AA4F-12AA-85E51D13EA79">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Tipo de acidez do café.</comment>
+<generatorID>11CC7175-254B-9711-67DB-19E7B0E36484</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_corpo_cafe" id="12518AA9-23B0-B340-D441-C1B883ED1CAF">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Tipo de corpo do café.</comment>
+<generatorID>E7F11163-FAE5-FF80-6DE3-19E62CCFBC7E</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_aroma_cafe" id="5F2990A9-169A-D910-585C-CC4476177710">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Tipo de aroma do café.</comment>
+<generatorID>838D2FA9-5644-B7FD-E6CA-D6AC9107E9A0</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bo_combo" id="E40B61B3-EA2B-9EC8-2280-7C37B38D60EF">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Booleano do combo.</comment>
+<generatorID>145D1689-2380-E169-08C6-95A9E0282FDA</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA3A6776-1094-54BB-6D20-EA8CFF34BA87" name="DIM_PRODUTO_PK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>3C7E0BC2-A89E-CAD2-4493-94E0B669D65B</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA726953-682F-3D5F-0EFA-89D3B14521CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

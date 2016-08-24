@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="524584F1-BF55-59B5-05DC-2A9E56540FC0" mainViewID="80D95886-6E30-D4AA-91B0-1BB94D889961">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:30:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

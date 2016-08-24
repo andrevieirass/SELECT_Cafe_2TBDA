@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3252C333-1648-F23B-CCB6-DA41977CAD64" name="DIM_PRODUTO">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_produto" id="4F561F37-D0A0-C789-6EF7-27A0E3BA8A31">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:17 UTC</createdTime>
+<comment>Código da dimensão produto.&lt;br/&gt;Surragte Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nk_produto" id="999A9B94-FE92-A3D9-3235-D0CC418B6F7E">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:23 UTC</createdTime>
+<comment>Código do produto.&lt;br/&gt;Naatural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_produto" id="0EFC5906-C8C0-5010-2139-D90274D51CA5">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:34 UTC</createdTime>
+<comment>Nome do produto.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+</Attribute>
+<Attribute name="ds_produto" id="B4CC36F6-45E9-D248-4888-235AF5031E31">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:39 UTC</createdTime>
+<comment>Descrição do produto.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+</Attribute>
+<Attribute name="nk_categoria" id="21103E9F-54C3-5F1A-152A-6581096C6E87">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:50:10 UTC</createdTime>
+<comment>Código da categoria.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+<Attribute name="nm_categoria" id="C755971D-7689-B76D-877A-95AA448C2A75">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:50:21 UTC</createdTime>
+<comment>Nome da categoria.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="nk_subcategoria" id="58DC7D0C-9F09-61E7-2A98-8546587A7D7C">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:44 UTC</createdTime>
+<comment>Código da subcategoria.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_subcategoria" id="066EEAE6-EBA5-B583-A04D-A3D548DBDBA8">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:58 UTC</createdTime>
+<comment>Nome da subcategoria.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="tp_torra_cafe" id="C1A5C9D6-472D-2F38-99E0-C5445EBCF486">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 13:53:28 UTC</createdTime>
+<comment>Tipo de torra do café.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="tp_acidez_cafe" id="11CC7175-254B-9711-67DB-19E7B0E36484">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 13:53:28 UTC</createdTime>
+<comment>Tipo de acidez do café.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="tp_corpo_cafe" id="E7F11163-FAE5-FF80-6DE3-19E62CCFBC7E">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 13:53:28 UTC</createdTime>
+<comment>Tipo de corpo do café.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="tp_aroma_cafe" id="838D2FA9-5644-B7FD-E6CA-D6AC9107E9A0">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 13:53:48 UTC</createdTime>
+<comment>Tipo de aroma do café.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="bo_combo" id="145D1689-2380-E169-08C6-95A9E0282FDA">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 14:09:39 UTC</createdTime>
+<comment>Booleano do combo.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C7E0BC2-A89E-CAD2-4493-94E0B669D65B" name="PK_DIM_PRODUTO">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:49:26 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4F561F37-D0A0-C789-6EF7-27A0E3BA8A31</newElementsIDs>
+<usedAttributes>
+<attributeRef>4F561F37-D0A0-C789-6EF7-27A0E3BA8A31</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

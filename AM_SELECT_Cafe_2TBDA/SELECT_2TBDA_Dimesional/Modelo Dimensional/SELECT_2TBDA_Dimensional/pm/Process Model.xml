@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="F75DAA7A-D680-F80B-DBCB-109162DE8DC7">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:30:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

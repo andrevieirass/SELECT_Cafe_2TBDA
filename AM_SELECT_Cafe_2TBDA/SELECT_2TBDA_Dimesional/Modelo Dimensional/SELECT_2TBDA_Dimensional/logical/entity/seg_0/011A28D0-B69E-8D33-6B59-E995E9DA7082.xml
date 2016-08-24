@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011A28D0-B69E-8D33-6B59-E995E9DA7082" name="DIM_FUNCIONARIO">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:46:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_funcionario" id="DCE52F5F-8485-1421-07DF-CC99C6812421">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:46:07 UTC</createdTime>
+<comment>Código da dimensão do funcionário.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nk_funcionario" id="1224FA70-1C1C-EB1E-7DD8-76E61E3A6E65">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:46:13 UTC</createdTime>
+<comment>Código do funcionário.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_funcionario" id="352EAB8B-8DFA-0B18-C5B6-44985A6A44FC">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:46:24 UTC</createdTime>
+<comment>Nome do funcionário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="nk_cargo_funcionario" id="D81A66B7-F22C-B900-0761-1BCBB7539A74">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:47:12 UTC</createdTime>
+<comment>Código do cargo do funcionário.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+</Attribute>
+<Attribute name="ds_cargo_funcionario" id="7D3C54E6-6298-0594-0DDC-41A81350C9ED">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:47:22 UTC</createdTime>
+<comment>Cargo do funcionário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="nk_gerente" id="9D236D49-B1C6-E0C2-EA6C-1A29C5007017">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:47:47 UTC</createdTime>
+<comment>Código do gerente.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_gerente" id="69A9C901-B8B6-0136-9385-87619783A9F0">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:47:59 UTC</createdTime>
+<comment>Nome do gerente.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="ds_sexo" id="AE0417EE-4E80-E6CB-F8E2-80BADDA102EA">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:48:18 UTC</createdTime>
+<comment>Descrição de seo do funcionário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="dt_contratacao" id="F6D856FC-8894-1FD6-6145-D8C2B3623805">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:48:22 UTC</createdTime>
+<comment>Data de contratação do funcionário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="dt_demissao" id="656804CB-0B14-D068-A79F-0CB6700D53C8">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:48:30 UTC</createdTime>
+<comment>Data de demissão do funcionário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23A7D827-67C9-8861-D2A7-8B5E6863622A" name="PK_DIM_VENDEDOR">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:46:12 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>DCE52F5F-8485-1421-07DF-CC99C6812421</newElementsIDs>
+<usedAttributes>
+<attributeRef>DCE52F5F-8485-1421-07DF-CC99C6812421</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

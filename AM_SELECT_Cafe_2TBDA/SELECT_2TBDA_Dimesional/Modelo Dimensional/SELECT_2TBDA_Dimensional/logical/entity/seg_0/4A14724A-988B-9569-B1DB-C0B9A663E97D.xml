@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A14724A-988B-9569-B1DB-C0B9A663E97D" name="DIM_CLIENTE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>2000</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>50</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>100</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_cliente" id="7BFD23A5-A6E1-DB78-584A-1C33B836BD1D">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Código da dimensão cliente.&lt;br/&gt;Surrogate Key.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>8FFE7A39-4BCB-2BE7-EFE5-A44652C75E57</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nk_cliente" id="727D4070-E89F-2B44-3E87-0D74CB095FAF">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Código do cliente.&lt;br/&gt;Natural Key.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>8F061C38-1072-9BB4-F716-B0B5E8A0DADA</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_cliente" id="3C149631-5484-38D5-2F78-F994F5A77CA6">
+<createdBy>rm75312</createdBy>
+<createdTime>2016-05-19 13:56:18 UTC</createdTime>
+<comment>Nome do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="dt_nasc_cliente" id="AA3B9205-4659-0C28-9AE2-B0D1CD8C8C31">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Data de nascimento do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>A4B510FF-EB4C-B3D9-8E87-45871D600F6A</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="nu_dia_nasc_cliente" id="12421B8B-03B2-816D-08D7-60FB3AD934BE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Dia do nascimento do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>14161D8D-1801-C7A4-5588-B72490EC3FC8</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="nu_mes_nasc_cliente" id="32B8EB70-FD38-57CB-9CA8-B3374E0B7F6E">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Mês do nascimento do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>9D42249E-8CA7-3FC3-B000-7851F3E1A924</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="nu_ano_nasc_cliente" id="60E123A0-16E9-C781-B80F-198167FC6E57">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Ano do nascimento do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>30CEADC4-1621-D186-A881-BD417F587BED</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="ds_sexo_cliente" id="2F12DB34-A659-60AE-FC6A-C7985890B8BF">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Descrição do sexo do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>968C8FFD-4DB4-D536-8471-7E93E74AFD8E</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="ds_endereco_cliente" id="E53845C2-3415-2BA9-438C-E19A1730D250">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Descrição do endereço do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>A8957B51-7814-3201-2CF5-E426512C5432</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="ds_bairro_cliente" id="9C9D2FBD-C811-DBB6-1C1F-A46B4EDF67F8">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Descrição do bairro do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>050E4158-A60F-C9F5-548D-C32BF3C0B6B9</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+</Attribute>
+<Attribute name="ds_zona_cliente" id="9A624BE5-8F8E-F35A-ABA7-CB0749E2C008">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Zona do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>F60289F3-9B14-E4C9-805F-88907F714C24</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="ds_cidade_cliente" id="FADA79C8-B148-AE1D-AAA6-E88CB13893E9">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Cidade do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>DCAC1F1E-FADA-EEF9-4903-9320F7EE5E2F</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="ds_estado_cliente" id="DD0F2688-3E33-FAA9-D2A6-84C4A2884A3B">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Estado do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>40AF93B2-C8D0-94C4-2C00-11C1F2A851E5</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="ds_regiao_cliente" id="3F442CD0-B60E-B6BA-9D96-45581C49548A">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<comment>Região do cliente.</comment>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<importedID>BBE8BCC6-1059-02D8-F56E-A6E469829C7B</importedID>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="dt_ultima_compra" id="342B464B-5543-71BC-4174-925DFF73A28B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-20 02:48:03 UTC</createdTime>
+<comment>Data da última compra do cliente.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4E2BAFA-0041-260A-194F-05142DB407D5" name="PK_DIM_CLIENTE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:14:25 UTC</createdTime>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>7BFD23A5-A6E1-DB78-584A-1C33B836BD1D</newElementsIDs>
+<usedAttributes>
+<attributeRef>7BFD23A5-A6E1-DB78-584A-1C33B836BD1D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

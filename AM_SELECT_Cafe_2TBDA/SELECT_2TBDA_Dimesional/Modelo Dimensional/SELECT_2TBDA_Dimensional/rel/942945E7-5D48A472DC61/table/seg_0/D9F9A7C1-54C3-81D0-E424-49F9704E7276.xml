@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9F9A7C1-54C3-81D0-E424-49F9704E7276" name="DIM_PROMOCAO">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>3AE2C2FB-66E9-2474-FC34-EE52CFEE320A</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_promocao" id="3F486886-12B6-1AE9-927D-82EDC03DF6C4">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão promoção.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>762C4FB3-A61A-7FC1-E0F0-D863D8B66D6F</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nk_promocao" id="21F5BBAC-C12B-C67F-5D58-03CC49FFA7E8">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da promoção.&lt;br/&gt;Natural Key.</comment>
+<generatorID>C528854F-13AD-7843-F4EF-C9BFFF58A27A</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_promocao" id="882BD109-CA1B-2B98-5677-8CCE9D7E8F80">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Nome da promoção.</comment>
+<generatorID>CAE5F3E9-F6F3-3153-A3BA-44774DDFB9BE</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_tipo_promocao" id="0F4F64C9-BE10-C604-3359-A0C2357F1C96">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Tipo da promoção.</comment>
+<generatorID>A852A8EE-2D0D-1FE9-F508-A00AE74B6FCF</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_categoria_promocao" id="314EADF7-8F47-E8A0-95F6-7BCDA0A0683C">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Descrição da categoria.</comment>
+<generatorID>A1FD16ED-8448-4DDC-EB0E-63A9B62B0BD1</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_tipo_midia" id="4693EFFB-C885-103D-7FD3-8AF42B5FA022">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Descrição do tipo da mídia.</comment>
+<generatorID>1549EB47-FA49-4338-525B-ED53958E0335</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_inicio_promocao" id="71EA8814-8EBC-5403-154C-0D38D4BC73A1">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Data início da promoção.</comment>
+<generatorID>592DF5AE-3C03-F8DE-9C1D-854FB4780F8C</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_final_promocao" id="F2ECB37B-0ADA-52AD-CBFD-CA97CDFCDDE5">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Data fina da promoção.</comment>
+<generatorID>87A92CA6-9E78-D199-886B-267751007113</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CD4882D-F574-AF0A-09BC-F6D37AAFF608" name="DIM_PROMOCAO_PK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>3B1E4829-B9F3-3659-E8DD-8C1E7672C244</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F486886-12B6-1AE9-927D-82EDC03DF6C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77B0DF1D-5888-C716-AB97-D89D0F0F948C" name="DIM_UNIDADE">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_unidade" id="E0572585-33E2-E7FD-D20F-695802E3781C">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:24 UTC</createdTime>
+<comment>Código da dimensão unidade.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nk_unidade" id="8C3402D1-861A-8A87-5096-DB4EB6007933">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:30 UTC</createdTime>
+<comment>Código da unidade.&lt;br/&gt;Natural Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="nm_unidade" id="686BD79C-F0A5-D3F4-2208-7E2ED114A248">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:37 UTC</createdTime>
+<comment>Nome da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="ds_unidade" id="E9A5AEF4-27D0-9352-09F2-50619C3B72DC">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:46 UTC</createdTime>
+<comment>Descrição da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="ds_endereco_unidade" id="DBDE25E4-194B-A8E2-A720-414A0E8B7603">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:52 UTC</createdTime>
+<comment>Endereço da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="ds_bairro_unidade" id="DD59D591-2CB8-EB44-F930-54921B604185">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:02 UTC</createdTime>
+<comment>Bairro da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+</Attribute>
+<Attribute name="ds_zona_unidade" id="81F742E4-856C-77AB-9597-DD043DB62BD8">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:06 UTC</createdTime>
+<comment>Zona da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="ds_cidade_unidade" id="BAE3BD69-BBE6-0452-5B59-5DFD01C91BC1">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:13 UTC</createdTime>
+<comment>Cidade da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="ds_estado_unidade" id="E64F3F4B-2A40-8450-6846-AF2952061B55">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:18 UTC</createdTime>
+<comment>Estado da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="ds_regiao_unidade" id="4924DCA3-E476-A1F0-327F-DA9F7041F59B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:26 UTC</createdTime>
+<comment>Região da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="ds_tipo_unidade" id="B82A6A3D-27D4-72FD-EC66-11BFF9008D55">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:44:34 UTC</createdTime>
+<comment>Tipo da unidade.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="nm_gerente_unidade" id="27AAB556-DB79-C412-99A8-2429FB1F154D">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:45:30 UTC</createdTime>
+<comment>Nome do gerente.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E88D2C11-498A-7C84-63BF-D0BF908895CA" name="PK_DIM_LOJA">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:43:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E0572585-33E2-E7FD-D20F-695802E3781C</newElementsIDs>
+<usedAttributes>
+<attributeRef>E0572585-33E2-E7FD-D20F-695802E3781C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

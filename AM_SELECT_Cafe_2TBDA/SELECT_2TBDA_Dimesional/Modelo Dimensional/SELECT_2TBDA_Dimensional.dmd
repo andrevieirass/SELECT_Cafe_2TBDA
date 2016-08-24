@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SELECT_2TBDA_Dimensional" id="4773FA6C-26E0-39C1-3C1D-E9CE272C0E20" version="3.5">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:30:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4773FA6C-26E0-39C1-3C1D-E9CE272C0E20</designId>
+</OSDM_Design>

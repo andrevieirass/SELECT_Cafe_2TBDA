@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A76AA347-9BBB-EAB5-D8C5-2A4CA6BF16B9" name="FAT_VENDA">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:31:31 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_cliente" id="83B617E1-ED02-681E-9027-C19D311722E9">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-13 13:20:41 UTC</createdTime>
+<comment>Código da dimensão cliente.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>D6804E0F-89DE-10B2-7875-96EC449E6027</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>7BFD23A5-A6E1-DB78-584A-1C33B836BD1D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="sk_data" id="624B9F65-6982-8EA8-543A-29A7D8949A6E">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:28:59 UTC</createdTime>
+<comment>Código da dimensão data.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>1A48E27F-10A8-5E54-5531-B2F0069F5178</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>AF404549-5D16-0F1A-BDFA-64A6CC64EECE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="sk_funcionario" id="00426A3E-01A9-505E-54D4-9B1FCE8126F4">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:29:12 UTC</createdTime>
+<comment>Código da dimensão funcionário.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>FDD0D97E-7DB8-742A-8B54-CD8F1D37476A</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>DCE52F5F-8485-1421-07DF-CC99C6812421</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="sk_unidade" id="1D3D3369-3407-25CD-502D-38F42C36423B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:29:06 UTC</createdTime>
+<comment>Código da dimensão unidade.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>C653C61F-BD7E-F81A-1E03-C60C8A74F2EC</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>E0572585-33E2-E7FD-D20F-695802E3781C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="sk_produto" id="8249F231-AC47-83EF-F6E1-10394ED62863">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:29:53 UTC</createdTime>
+<comment>Código da dimensão produto.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>23898FC1-53D9-A165-D9AC-1E8F5E4588F2</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>4F561F37-D0A0-C789-6EF7-27A0E3BA8A31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="sk_promocao" id="02C5270B-D4A2-5D4F-449A-ED7AB91078D9">
+<createdBy>MariaAparecida</createdBy>
+<createdTime>2016-05-19 23:48:13 UTC</createdTime>
+<comment>Código da dimensão promocao.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>C3B88B60-95CE-877E-A707-FA041F0E56F8</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<referedAttribute>762C4FB3-A61A-7FC1-E0F0-D863D8B66D6F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="dd_transacao" id="A0EE69C1-38A7-2CAE-E736-C97DDE28015A">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:33:45 UTC</createdTime>
+<comment>Código da transação.&lt;br/&gt;Primary Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="qt_venda" id="B1318623-A9E2-3395-E3F5-3457C2C05A00">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:31:44 UTC</createdTime>
+<comment>Quantidade da venda.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="vl_preco_unitario" id="48384038-AAA7-B158-3E6D-4E2466628EF7">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:32:16 UTC</createdTime>
+<comment>Valor do preço unitário.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="vl_desconto_unitario" id="F6AD3E89-C84E-FABB-443B-A2F327CB8922">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:32:35 UTC</createdTime>
+<comment>Valor do desconto.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="vl_total_preco" id="F789755A-51C7-7104-8899-C294D032118D">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:32:45 UTC</createdTime>
+<comment>Valor do preço total.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+<Attribute name="vl_total_desconto" id="55AF3636-4904-BA13-5432-11CA8385BAFF">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:33:18 UTC</createdTime>
+<comment>Valor do desconto.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="357CE4EE-1668-1982-EF0B-623B763C0141" name="FAT_VENDA_PK">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 23:33:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>23898FC1-53D9-A165-D9AC-1E8F5E4588F2,1A48E27F-10A8-5E54-5531-B2F0069F5178,C653C61F-BD7E-F81A-1E03-C60C8A74F2EC,C3B88B60-95CE-877E-A707-FA041F0E56F8,FDD0D97E-7DB8-742A-8B54-CD8F1D37476A,A0EE69C1-38A7-2CAE-E736-C97DDE28015A,D6804E0F-89DE-10B2-7875-96EC449E6027</newElementsIDs>
+<usedAttributes>
+<attributeRef>8249F231-AC47-83EF-F6E1-10394ED62863</attributeRef>
+<attributeRef>624B9F65-6982-8EA8-543A-29A7D8949A6E</attributeRef>
+<attributeRef>1D3D3369-3407-25CD-502D-38F42C36423B</attributeRef>
+<attributeRef>02C5270B-D4A2-5D4F-449A-ED7AB91078D9</attributeRef>
+<attributeRef>00426A3E-01A9-505E-54D4-9B1FCE8126F4</attributeRef>
+<attributeRef>A0EE69C1-38A7-2CAE-E736-C97DDE28015A</attributeRef>
+<attributeRef>83B617E1-ED02-681E-9027-C19D311722E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

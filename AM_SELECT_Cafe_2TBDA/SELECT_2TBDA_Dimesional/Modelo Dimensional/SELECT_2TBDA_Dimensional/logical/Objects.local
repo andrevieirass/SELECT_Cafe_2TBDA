@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="011A28D0-B69E-8D33-6B59-E995E9DA7082" name="DIM_FUNCIONARIO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3252C333-1648-F23B-CCB6-DA41977CAD64" name="DIM_PRODUTO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3AE2C2FB-66E9-2474-FC34-EE52CFEE320A" name="DIM_PROMOCAO" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4A14724A-988B-9569-B1DB-C0B9A663E97D" name="DIM_CLIENTE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="645AAA05-098C-39C3-3710-CD512B83BF04" name="DIM_DATA" seqName="seg_0"/>
+   <object objectType="Entity" objectID="77B0DF1D-5888-C716-AB97-D89D0F0F948C" name="DIM_UNIDADE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A76AA347-9BBB-EAB5-D8C5-2A4CA6BF16B9" name="FAT_VENDA" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1A48E27F-10A8-5E54-5531-B2F0069F5178" name="FK_FAT_VENDA_DIM_DATA" seqName="seg_0"/>
+   <object objectType="Relation" objectID="23898FC1-53D9-A165-D9AC-1E8F5E4588F2" name="FK_FAT_VENDA_DIM_PRODUTO" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C3B88B60-95CE-877E-A707-FA041F0E56F8" name="FK_FAT_VENDA_DIM_PROMOCAO" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C653C61F-BD7E-F81A-1E03-C60C8A74F2EC" name="FK_FAT_VENDA_DIM_UNIDADE" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D6804E0F-89DE-10B2-7875-96EC449E6027" name="FK_FAT_VENDA_DIM_CLIENTE" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FDD0D97E-7DB8-742A-8B54-CD8F1D37476A" name="FK_FAT_VENDA__DIM_FUNCIONARIO" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

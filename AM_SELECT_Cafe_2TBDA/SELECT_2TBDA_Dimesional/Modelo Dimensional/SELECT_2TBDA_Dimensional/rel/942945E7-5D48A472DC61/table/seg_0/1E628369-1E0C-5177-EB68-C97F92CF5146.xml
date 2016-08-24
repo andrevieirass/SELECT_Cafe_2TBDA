@@ -1,0 +1,275 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E628369-1E0C-5177-EB68-C97F92CF5146" name="FAT_VENDA">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>A76AA347-9BBB-EAB5-D8C5-2A4CA6BF16B9</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_cliente" id="C9162765-0CBC-5184-774C-00E1CDB56F84">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão cliente.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>83B617E1-ED02-681E-9027-C19D311722E9</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>39E00975-0FA8-C77A-F69F-79755709A744</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86B5D1B6-4723-14F5-EFE1-56BF6C85482A" referredColumn="39E00975-0FA8-C77A-F69F-79755709A744"/>
+</associations>
+</Column>
+<Column name="sk_data" id="30EDF3A9-BE96-E094-8B47-F4E659701EC9">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão data.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>624B9F65-6982-8EA8-543A-29A7D8949A6E</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>CC8BCE9E-B06B-6A13-7BE1-2119A3C6E6F9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="331B7369-71E6-CC45-9B4B-BD286F23B0C1" referredColumn="CC8BCE9E-B06B-6A13-7BE1-2119A3C6E6F9"/>
+</associations>
+</Column>
+<Column name="sk_funcionario" id="2AB86674-DD73-4C53-FDCC-EAE11D9E88BE">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão funcionário.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>00426A3E-01A9-505E-54D4-9B1FCE8126F4</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>D82FB305-9872-FC07-1461-0437C7586982</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9499853D-2C26-90D6-1016-0AD5FB527A98" referredColumn="D82FB305-9872-FC07-1461-0437C7586982"/>
+</associations>
+</Column>
+<Column name="sk_unidade" id="41588413-2C39-4728-9BD3-3E3ADCEDD0E0">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão unidade.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>1D3D3369-3407-25CD-502D-38F42C36423B</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>09FA1571-1F9D-FC68-C231-6F4AA1234411</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42472C1C-67A3-C957-85B6-E4D00BC31007" referredColumn="09FA1571-1F9D-FC68-C231-6F4AA1234411"/>
+</associations>
+</Column>
+<Column name="sk_produto" id="117C122F-1185-0DA3-87BE-962B1CBD5B0E">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão produto.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>8249F231-AC47-83EF-F6E1-10394ED62863</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>FA726953-682F-3D5F-0EFA-89D3B14521CB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D143BAA-C68B-1E89-DDA6-81DB8A1400F0" referredColumn="FA726953-682F-3D5F-0EFA-89D3B14521CB"/>
+</associations>
+</Column>
+<Column name="sk_promocao" id="DEE9E9D5-5F9A-4C5A-6CB5-3AB7F5E89618">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da dimensão promocao.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>02C5270B-D4A2-5D4F-449A-ED7AB91078D9</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<delegate>3F486886-12B6-1AE9-927D-82EDC03DF6C4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD273EE4-0F57-5E4C-5FFC-B905377DBED5" referredColumn="3F486886-12B6-1AE9-927D-82EDC03DF6C4"/>
+</associations>
+</Column>
+<Column name="dd_transacao" id="D17C9E7F-014C-39F6-4DE0-1F65F6885B6D">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Código da transação.&lt;br/&gt;Primary Key.</comment>
+<generatorID>A0EE69C1-38A7-2CAE-E736-C97DDE28015A</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_venda" id="F83DA405-7DB3-9729-8790-9483F1102ACC">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Quantidade da venda.</comment>
+<generatorID>B1318623-A9E2-3395-E3F5-3457C2C05A00</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_preco_unitario" id="7F21820A-6B23-594D-B4EE-EDBF34311889">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Valor do preço unitário.</comment>
+<generatorID>48384038-AAA7-B158-3E6D-4E2466628EF7</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_desconto_unitario" id="7C40D878-6C10-7A34-ADBE-4B71A60354A7">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Valor do desconto.</comment>
+<generatorID>F6AD3E89-C84E-FABB-443B-A2F327CB8922</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_total_preco" id="F4049284-9CCB-5DB2-64B8-F37B6F748698">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Valor do preço total.</comment>
+<generatorID>F789755A-51C7-7104-8899-C294D032118D</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_total_desconto" id="1EBB768A-C8DB-7D00-9982-2661B20A788C">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<comment>Valor do desconto.</comment>
+<generatorID>55AF3636-4904-BA13-5432-11CA8385BAFF</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31287D10-E779-F6F7-6761-EB3DB0C4D269" name="FAT_VENDA_PK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>357CE4EE-1668-1982-EF0B-623B763C0141</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="117C122F-1185-0DA3-87BE-962B1CBD5B0E"/>
+<colUsage columnID="30EDF3A9-BE96-E094-8B47-F4E659701EC9"/>
+<colUsage columnID="41588413-2C39-4728-9BD3-3E3ADCEDD0E0"/>
+<colUsage columnID="DEE9E9D5-5F9A-4C5A-6CB5-3AB7F5E89618"/>
+<colUsage columnID="2AB86674-DD73-4C53-FDCC-EAE11D9E88BE"/>
+<colUsage columnID="D17C9E7F-014C-39F6-4DE0-1F65F6885B6D"/>
+<colUsage columnID="C9162765-0CBC-5184-774C-00E1CDB56F84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2C3B89D-E4EF-F10A-4F48-58B40B931A4B" name="FAT_VENDA_DIM_CLIENTE_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>D6804E0F-89DE-10B2-7875-96EC449E6027</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9162765-0CBC-5184-774C-00E1CDB56F84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12315265-2C41-1C30-2DDF-CECCC18F83ED" name="FAT_VENDA_DIM_DATA_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>1A48E27F-10A8-5E54-5531-B2F0069F5178</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30EDF3A9-BE96-E094-8B47-F4E659701EC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EBF4212-EDA1-AA0D-CEAD-39DBAD3ACE7C" name="FAT_VENDA_DIM_PRODUTO_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>23898FC1-53D9-A165-D9AC-1E8F5E4588F2</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="117C122F-1185-0DA3-87BE-962B1CBD5B0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07B85D15-CE17-2AC9-A5D5-B1E42281F5B5" name="FAT_VENDA_DIM_PROMOCAO_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>C3B88B60-95CE-877E-A707-FA041F0E56F8</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEE9E9D5-5F9A-4C5A-6CB5-3AB7F5E89618"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C1D68F8-6F3E-B42D-19DE-A598A42F9CCB" name="FAT_VENDA_DIM_UNIDADE_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>C653C61F-BD7E-F81A-1E03-C60C8A74F2EC</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41588413-2C39-4728-9BD3-3E3ADCEDD0E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E675CA78-A2A0-442B-74E1-4C286BA0D857" name="FAT_VENDA_DIM_FUNCIONARIO_FK">
+<createdBy>rm73920</createdBy>
+<createdTime>2016-05-20 14:31:39 UTC</createdTime>
+<generatorID>FDD0D97E-7DB8-742A-8B54-CD8F1D37476A</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AB86674-DD73-4C53-FDCC-EAE11D9E88BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

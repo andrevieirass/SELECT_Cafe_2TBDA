@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="0BBD9047-8CC6-7B68-F42A-8E2F8CABBB13" name="DIM_UNIDADE" seqName="seg_0"/>
+   <object objectType="Table" objectID="16CAD100-A523-1AD1-73D3-9D79BAFAF15D" name="DIM_DATA" seqName="seg_0"/>
+   <object objectType="Table" objectID="1E628369-1E0C-5177-EB68-C97F92CF5146" name="FAT_VENDA" seqName="seg_0"/>
+   <object objectType="Table" objectID="2DB5B0BC-B915-FEB6-FA92-EC90149DC4E6" name="DIM_CLIENTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="80E20590-4C20-B009-9ACC-5A890F374DCE" name="DIM_PRODUTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="D9F9A7C1-54C3-81D0-E424-49F9704E7276" name="DIM_PROMOCAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="ED954856-286F-2C07-B17E-7AFA0A96C5EE" name="DIM_FUNCIONARIO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1D143BAA-C68B-1E89-DDA6-81DB8A1400F0" name="FAT_VENDA_DIM_PRODUTO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="331B7369-71E6-CC45-9B4B-BD286F23B0C1" name="FAT_VENDA_DIM_DATA_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="42472C1C-67A3-C957-85B6-E4D00BC31007" name="FAT_VENDA_DIM_UNIDADE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="86B5D1B6-4723-14F5-EFE1-56BF6C85482A" name="FAT_VENDA_DIM_CLIENTE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9499853D-2C26-90D6-1016-0AD5FB527A98" name="FAT_VENDA_DIM_FUNCIONARIO_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DD273EE4-0F57-5E4C-5FFC-B905377DBED5" name="FAT_VENDA_DIM_PROMOCAO_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

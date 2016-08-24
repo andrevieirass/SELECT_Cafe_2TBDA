@@ -1,0 +1,494 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="645AAA05-098C-39C3-3710-CD512B83BF04" name="DIM_DATA">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:34:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_data" id="AF404549-5D16-0F1A-BDFA-64A6CC64EECE">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:04 UTC</createdTime>
+<comment>Código da dimensão data.&lt;br/&gt;Surrogate Key.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+</Attribute>
+<Attribute name="data" id="81D4A7AC-14BC-23D3-C61A-746108CFB6AD">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:15 UTC</createdTime>
+<comment>Data.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="data_extenso" id="9D3A7C8C-5172-A649-F2B4-0870EC0BE740">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:19 UTC</createdTime>
+<comment>Data em extenso.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+</Attribute>
+<Attribute name="ano" id="BF7838AD-4C92-02BE-B00B-46E1BE4D730E">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:25 UTC</createdTime>
+<comment>Ano da data.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="mes" id="80C1F49D-315D-D16E-3D7C-800D6E5B92FC">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:28 UTC</createdTime>
+<comment>Mês da data.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="mes_extenso" id="BB79B376-E89A-BBE1-F583-2EC54ABE44EF">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:36 UTC</createdTime>
+<comment>Mês extenso.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="mes_abreviado" id="DFB63E5B-06C9-6432-20C3-9B4CA7B869EE">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:48 UTC</createdTime>
+<comment>Mês abreviado.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+<Attribute name="seman_mes" id="B5434DF8-9EB6-92A4-786E-D20E93A13893">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:04 UTC</createdTime>
+<comment>Semanda do mês.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="semana_ano" id="28F8ED79-EA53-BAB9-8CBC-7DCABB9A8E47">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:13 UTC</createdTime>
+<comment>Semanda do ano.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="dia_mes" id="4FCE0FD4-AE9D-8CC9-7A92-E094E001CCF5">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:19 UTC</createdTime>
+<comment>Dia do mês.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="dia_semana" id="98AF5ED2-BE40-6CB6-352F-0EEEF8343659">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:25 UTC</createdTime>
+<comment>Dia da semana.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="dia_semana_extenso" id="DF033819-4BF2-5403-E88C-056F1D819F7B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:52 UTC</createdTime>
+<comment>Dia da semana extenso.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="dia_seman_abreviado" id="21EE6AE4-5175-E0A5-AAF3-81CF8724C447">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:37:59 UTC</createdTime>
+<comment>Dia da semana abreviado.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+<Attribute name="dia_final_de_semana" id="FD3D176F-E315-B9A4-9C55-1BEF4962020F">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-20 02:11:42 UTC</createdTime>
+<comment>Dia do final de semana.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+</Attribute>
+<Attribute name="dia_ano" id="10FF65F8-BDD6-FE6E-3001-22DFEEEA3A52">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:38:23 UTC</createdTime>
+<comment>Dia do ano.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+</Attribute>
+<Attribute name="ano_bissexto" id="1D7DB152-3C09-C539-B605-3E0043B4FA53">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:38:34 UTC</createdTime>
+<comment>Ano bissexto.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="feriado" id="B786624A-D917-5A76-2FE3-3C93425B4F85">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:38:42 UTC</createdTime>
+<comment>Feriado.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="feriado_extenso" id="5D1C1610-1234-B188-0E8D-5C109276A5AC">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:38:47 UTC</createdTime>
+<comment>Feriado extenso.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="pre_feriado" id="5D9CA9C4-B772-8004-3682-655AA6E00827">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:38:57 UTC</createdTime>
+<comment>Data pré feriado.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="pos_feriado" id="4D23D2C1-DCA5-B230-8608-2CAEF5CCB86B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:05 UTC</createdTime>
+<comment>Data pós feriado.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="quinzena_mes" id="648702C9-1E87-EBFD-7ABA-5D0CAC0A5CF9">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:12 UTC</createdTime>
+<comment>Quinzena do mês.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="quinzena_ano" id="BDC8AC21-969C-6F8F-DF69-21BB0E1363FB">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:20 UTC</createdTime>
+<comment>Quinzena do ano.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="bimestre" id="15D8E485-A9D5-D955-4AE5-AD1B3E46EEE8">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:28 UTC</createdTime>
+<comment>Bimestre.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="trimestre" id="347215C4-135E-97A0-D04E-32B8AC9958E2">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:33 UTC</createdTime>
+<comment>Trimestre.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="semestre" id="90C80F9E-2B60-35D1-EC6C-BD766BC1AE64">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:39:40 UTC</createdTime>
+<comment>Semeste.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="estacao_ano" id="0103E8B4-2D5A-DDE1-273C-4F455FA4B667">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:40:22 UTC</createdTime>
+<comment>Estação do ano.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+<Attribute name="ultimo_dia_mes" id="17381F37-6A31-11E6-D78A-95A67338A5F9">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:40:28 UTC</createdTime>
+<comment>Último dia do mês.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="ultimo_dia_bimestre" id="43EC5B7B-5BE1-C3B8-67E5-77F86B546BCD">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:40:35 UTC</createdTime>
+<comment>Último dia do bimestre.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="ultimo_dia_trimestre" id="7D9439F5-DCED-4422-37DF-678C51438134">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:40:43 UTC</createdTime>
+<comment>Último dia do trimestre.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="ultimo_dia_semestre" id="173D2A0E-6F0F-1473-2BFB-5C3F6409ED07">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:41:00 UTC</createdTime>
+<comment>Último do semestre.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+</Attribute>
+<Attribute name="campanha" id="E8534FA5-DF4F-A851-4297-D3FEF535C926">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:41:12 UTC</createdTime>
+<comment>Descrição da campanha.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="pre_campanha" id="97359D98-AE54-CFD1-7200-885F4EFEB33C">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:41:15 UTC</createdTime>
+<comment>Data pré campanha.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="pos_campanha" id="3101E260-CB92-267E-661A-B3819060A16B">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:41:21 UTC</createdTime>
+<comment>Data pós campanha.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58A225AB-F3A2-7396-4868-AC9C5E3C0796" name="PK_DIM_DATA">
+<createdBy>André Vieira</createdBy>
+<createdTime>2016-05-03 22:36:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>SELECT_2TBDA_Dimensional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="942945E7-F9B0-E74E-8E34-5D48A472DC61" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AF404549-5D16-0F1A-BDFA-64A6CC64EECE</newElementsIDs>
+<usedAttributes>
+<attributeRef>AF404549-5D16-0F1A-BDFA-64A6CC64EECE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
